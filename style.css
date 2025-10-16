@@ -1,0 +1,162 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #222;
+  --accent-color: #0077ff;
+  --card-bg: #f4f4f4;
+}
+
+body.dark {
+  --bg-color: #121212;
+  --text-color: #e4e4e4;
+  --accent-color: #4dabf7;
+  --card-bg: #1e1e1e;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Header */
+header {
+  background-color: var(--accent-color);
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+  position: relative;
+}
+
+header button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #fff;
+  border: none;
+  color: var(--accent-color);
+  padding: 8px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+header button:hover {
+  background: #ffe600;
+}
+
+/* Main */
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+h2 {
+  border-bottom: 2px solid var(--accent-color);
+  display: inline-block;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+}
+
+.item {
+  background-color: var(--card-bg);
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.item h3 {
+  margin-bottom: 5px;
+  color: var(--accent-color);
+}
+
+.item span {
+  display: block;
+  font-size: 0.9em;
+  opacity: 0.8;
+  margin-bottom: 8px;
+}
+
+.skills-category {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.skills-category h3 {
+  color: var(--accent-color);
+  margin-bottom: 10px;
+}
+
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-start; /* sola alır */
+
+  padding: 0;
+}
+
+.skills-list li {
+  background-color: var(--card-bg);
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+/* Contact */
+#contact a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: var(--card-bg);
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+}
+
+
+.cv-container {
+  text-align: left;
+  width: 100%;
+}
+
+.cv-button {
+  display: inline-block;
+  background-color: #0077ff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.cv-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #0077ff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.cv-button:hover {
+  background-color: #005fcc;
+}
